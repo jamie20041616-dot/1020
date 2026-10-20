@@ -1,0 +1,15 @@
+/* 設定整個網頁的邊界與內距為零，背景改為乾淨純白色 */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* 隱藏捲軸，避免全螢幕畫布出現捲動條 */
+  background-color: #ffffff; /* 設定主題背景為純白色 */
+  user-select: none; /* 禁止選取網頁文字，防止拖曳時誤觸反白 */
+  -webkit-user-select: none; /* 相容 Safari 瀏覽器禁止選取設定 */
+  touch-action: none; /* 禁止行動裝置預設手勢，確保觸控拖曳順暢 */
+}
+
+/* 設定 p5.js 畫布元素為區塊元素，消除行內多餘間距 */
+canvas {
+  display: block;
+}
